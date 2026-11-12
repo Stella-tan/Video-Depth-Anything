@@ -1,0 +1,13 @@
+# Same as requirements.txt minus torch/torchvision/xformers,
+# which setup_windows.bat installs from the PyTorch index (CUDA or CPU build).
+numpy==1.24.0
+opencv-python
+matplotlib
+pillow
+imageio==2.37.0
+imageio-ffmpeg==0.4.7
+decord
+einops==0.4.1
+easydict
+tqdm
+OpenEXR==3.3.1

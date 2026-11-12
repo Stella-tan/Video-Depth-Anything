@@ -1,7 +1,46 @@
-.vscode/
-outputs
-checkpoints
-__pycache__
-*/__pycache__
-*.pyc
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# --- Python bytecode / caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Build / packaging ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Model weights & checkpoints ---
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+
+# --- Outputs ---
+outputs/
 gradio*
+*.log
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Secrets ---
+.env
